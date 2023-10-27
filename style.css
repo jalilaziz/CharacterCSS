@@ -5,7 +5,29 @@
 }
 
 .box {
+    position: relative;
     width: 500px;
     height: 500px;
     border: 2px solid black;
+}
+
+.feet {
+    position: absolute;
+    top: 300px;
+}
+
+.rightup {
+    position: absolute;
+    width: 70px;
+    height: 100px;
+    border: 5px solid black;
+    background-color: gray;
+    left: 80px;
+}
+
+.leftup {
+    width: 70px;
+    height: 100px;
+    border: 5px solid black;
+    background-color: gray;
 }
