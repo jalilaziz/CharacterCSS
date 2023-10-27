@@ -280,7 +280,7 @@
   top: 65%;
   width: 200px;
   height: 130px;
-  transform: translate(-40%,50%); 
+  transform: translate(-40%, 50%);
   z-index: -1;
 }
 
@@ -336,9 +336,10 @@
   transform: translate(-55%, -50%);
   z-index: 2;
 }
-.yd1:hover {
+.box:hover .yd1 {
   transform: rotate(120deg) translateX(-100%);
   transform-origin: center;
+  border-right: 5px solid var(--black);
   z-index: -1;
   top: 25%;
 }
@@ -405,12 +406,12 @@
 }
 
 .yd2 {
-  transform: rotate(-18deg) translateY(-40%);
+  transform: rotate(-18deg) translate(25% ,-30%);
   width: 50px;
   height: 150px;
   background-color: var(--clothes-color);
   position: absolute;
-  top:50%;
+  top: 50%;
   left: 100%;
   border-top-right-radius: 80%;
   z-index: 1;
