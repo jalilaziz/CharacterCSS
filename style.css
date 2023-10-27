@@ -27,7 +27,7 @@
     border: 2px solid black;
     position: relative;
 }
-
+/*samir*/
 .to{
   position: absolute;
   width: 300px;
@@ -120,6 +120,7 @@ z-index: -1;
   border-radius: 90px;
   z-index: -1;
 }
+/*samir*/
 
 .hair {
     position: absolute;
