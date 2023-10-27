@@ -3,6 +3,16 @@
   margin: 0;
   padding: 0;
 }
+:root{
+  --face-color:#FFCCAA;
+  --hear-color:#653301;
+  --scarf-color1:#FFCC66;
+  --scarf-color2:#CC0200;
+  --clothes-color:#222222;
+  --leg-color:#444444;
+  --black:black;
+}
+
 
 .box {
     position:relative;
@@ -13,8 +23,19 @@
 .cachcour {
   position:absolute;
   width:30%;
-  height:20px;
+  height:50px;
   border:3px solid black;
-  background-image: linear-gradient(to right,red 0% 10%, yellow 10% 30% , red 10% 30% );
-  
+  border-bottom-left-radius:20px;
+  border-bottom-right-radius:20px;
+  background-image: linear-gradient(to right,var(--scarf-color2) 0% 10% ,var(--scarf-color1)  10% 30% ,var(--scarf-color2) 30% 50% ,var(--scarf-color1)  50% 70% ,var(--scarf-color2) 70% 90%, var(--scarf-color1) 90%); 
 }
+.cachcour1 {
+  position:absolute;
+  border:3px solid black;
+  width:8%;
+  height:55px;
+  top:47px;
+  left:10px;
+  background-image:linear-gradient(to bottom,var(--scarf-color2) 0% 10% ,var(--scarf-color1) 10% 50% ,var(--scarf-color2) 20%);
+}
+
