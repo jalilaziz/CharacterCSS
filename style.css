@@ -14,12 +14,15 @@
   --black:black;
 }
 
+
+
 .box {
-    position: relative;
+    position:relative;
     width: 500px;
     height: 500px;
     border: 2px solid black;
 }
+
 .hair {
     position: absolute;
     border: 2px dotted green;
@@ -107,5 +110,24 @@
     top: 95px;
     left:15px;
     border-radius: 32px 0 0 0;
+}
+
+.cachcour {
+  position:absolute;
+  width:30%;
+  height:50px;
+  border:3px solid black;
+  border-bottom-left-radius:20px;
+  border-bottom-right-radius:20px;
+  background-image: linear-gradient(to right,var(--scarf-color2) 0% 10% ,var(--scarf-color1)  10% 30% ,var(--scarf-color2) 30% 50% ,var(--scarf-color1)  50% 70% ,var(--scarf-color2) 70% 90%, var(--scarf-color1) 90%); 
+}
+.cachcour1 {
+  position:absolute;
+  border:3px solid black;
+  width:8%;
+  height:55px;
+  top:47px;
+  left:10px;
+  background-image:linear-gradient(to bottom,var(--scarf-color2) 0% 10% ,var(--scarf-color1) 10% 50% ,var(--scarf-color2) 20%);
 }
 
