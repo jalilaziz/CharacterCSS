@@ -16,7 +16,7 @@
   --cat-ear-color: #494c55;
   --cat-inside-ear-color: #5e6372;
   --cat-body-color: #fbfbf9;
-  --cloud-color:#eee;
+  --cloud-color: #eee;
   --animation-time: 60s;
 }
 
@@ -369,7 +369,6 @@
   position: absolute;
   top: 100%;
   left: -1px;
-  /* border: 2px solid rgb(123, 66, 66); */
   border-radius: 10px 10px 50% 50%;
   z-index: -1;
 }
