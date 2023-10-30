@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="./css/bg.css" />
     <link rel="stylesheet" href="./css/trees.css" />
     <link rel="stylesheet" href="./css/owl.css" />
-    <link rel="stylesheet" href="./css/cat.css" />
-    
+    <link rel="stylesheet" href="./css/dog.css" />
+
     <title>CSS Character</title>
   </head>
   <body>
@@ -106,8 +106,8 @@
       <!-- end message section  -->
     </div>
     <!-- cat section -->
-    <div class="cat-box">
-      <div class="cat-head">
+    <div class="dog-box">
+      <div class="dog-head">
         <div class="face left">
           <div class="ear"></div>
           <div class="eye-bg">
@@ -121,19 +121,19 @@
           </div>
         </div>
         <div class="nous"></div>
-        <div class="cat-mouth"></div>
+        <div class="dog-mouth"></div>
       </div>
-      <div class="cat-body-box">
-        <div class="cat-body">
+      <div class="dog-body-box">
+        <div class="dog-body">
           <span></span>
         </div>
         <div class="tail"></div>
       </div>
-      <div class="cat-feet-box">
+      <div class="dog-feet-box">
         <div class="left feet"></div>
         <div class="right feet"></div>
       </div>
-      <audio id="audio" src="media/cat-meow.mp3"></audio>
+      <audio id="audio" src="media/dog.mp3"></audio>
     </div>
     <!-- end  -->
     <div class="trees">
@@ -178,64 +178,68 @@
         <div class="shadow"></div>
       </div>
     </div>
-    <script>
-      let cat = document.querySelector(".cat-box");
-      let audio = document.getElementById("audio");
-      cat.addEventListener("mouseenter", () => {
-        audio.play();
-      });
-    </script>
     <!-- owl box-->
     <div class="owl">
       <div class="owlhead">
-          <div class="owlears">
-              <div class="earleft"></div>
-              <div class="earright"></div>
-          </div>
-          <div class="owlface"></div>
-            <div class="owleyes"> 
-                <div class="eyeleft">
-                    <div class="eyeleft1"></div>
-                      <div class="eyeleft2">
-                        <div class="eyeleft3">
-                            <div class="eyeleft4"></div>
-                        </div>
-                      </div>
-                </div>
-
-                <div class="eyeright">
-                    <div class="eyeright1"></div>
-                      <div class="eyeright2">
-                        <div class="eyeright3">
-                            <div class="eyeright4"></div>
-                        </div>
-                      </div>
-                </div>
+        <div class="owlears">
+          <div class="earleft"></div>
+          <div class="earright"></div>
+        </div>
+        <div class="owlface"></div>
+        <div class="owleyes">
+          <div class="eyeleft">
+            <div class="eyeleft1"></div>
+            <div class="eyeleft2">
+              <div class="eyeleft3">
+                <div class="eyeleft4"></div>
+              </div>
             </div>
-            <div class="owlnose"></div>
+          </div>
+
+          <div class="eyeright">
+            <div class="eyeright1"></div>
+            <div class="eyeright2">
+              <div class="eyeright3">
+                <div class="eyeright4"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="owlnose"></div>
       </div>
 
-      <div class="owlbody">
-      </div>
+      <div class="owlbody"></div>
 
       <div class="owlwings">
-          <div class="wingleft"></div>
-          <div class="wingright"></div>
+        <div class="wingleft"></div>
+        <div class="wingright"></div>
       </div>
 
       <div class="owlfeet">
-          <div class="leftfoot">
-              <div class="lpart1"></div>
-              <div class="lpart2"></div>
-              <div class="lpart3"></div>
-          </div>
-          <div class="rightfoot">
-              <div class="rpart1"></div>
-              <div class="rpart2"></div>
-              <div class="rpart3"></div>
-          </div>
+        <div class="leftfoot">
+          <div class="lpart1"></div>
+          <div class="lpart2"></div>
+          <div class="lpart3"></div>
+        </div>
+        <div class="rightfoot">
+          <div class="rpart1"></div>
+          <div class="rpart2"></div>
+          <div class="rpart3"></div>
+        </div>
+        <audio id="owl-audio" src="./media/owl.mp3"></audio>
       </div>
     </div>
     <!-- owl end-->
+    <script>
+      let cat = document.querySelector(".dog-box");
+      let audio = document.querySelectorAll("audio");
+      cat.addEventListener("click", () => {
+        audio[0].play();
+      });
+      let owl = document.querySelector(".owl");
+      owl.addEventListener("click", () => {
+        audio[1].play();
+      });
+    </script>
   </body>
 </html>
