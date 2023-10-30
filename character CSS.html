@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/bg.css" />
+    <link rel="stylesheet" href="./css/trees.css" />
     <link rel="stylesheet" href="./css/cat.css" />
-    <link rel="stylesheet" href="css/trees.css" />
     <title>CSS Character</title>
   </head>
   <body>
@@ -133,6 +133,7 @@
       </div>
       <audio id="audio" src="media/cat-meow.mp3"></audio>
     </div>
+    <!-- end  -->
     <div class="trees">
       <div class="tree">
         <div class="green">
@@ -177,8 +178,9 @@
     </div>
     <script>
       let cat = document.querySelector(".cat-box");
+      let audio = document.getElementById("audio");
       cat.addEventListener("mouseenter", () => {
-        document.getElementById("audio").play();
+        audio.play();
       });
     </script>
   </body>
