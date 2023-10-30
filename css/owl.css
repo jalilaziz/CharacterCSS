@@ -1,0 +1,286 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+:root {
+    --body-color: rgb(117, 66, 17);
+    --body-color2: rgb(171, 97, 28);
+    --nose-color: orange;
+}
+
+.owl {
+    position: absolute;
+    top: 56%;
+    left: 27%;
+    transform: translate(-50%);
+    width: 280px;
+    height: 190px;
+}
+.owlhead {
+    position: absolute;
+    top: 0;
+    width: 150px;
+    height: 100px;
+    animation-timeline: auto;
+    animation-range-start: normal;
+    animation-range-end: normal;
+    animation: 1.5s linear 0s infinite normal none running headAnimation;
+}
+@keyframes headAnimation {
+    0% {
+      top: 0%;
+    }
+    50% {
+      top: 5%;
+    }
+    100% {
+      top: 0%;
+    }
+  }
+
+.owlface {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 120px;
+    height: 60px;
+    background-color: var(--body-color);
+    border-radius: 60%;
+    z-index: 1;
+
+}
+
+.earleft {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 3%;
+    left: 20%;
+    background-color: var(--body-color);
+    transform: rotate(35deg);
+}
+.earright {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 3%;
+    left: 60%;
+    background-color: var(--body-color);
+    transform: rotate(55deg);
+}
+.owleyes {
+    position: absolute;
+    top: 10%;
+    width: 100%;
+    height: 100px;
+}
+
+.eyeleft, .eyeright {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+  .eyeleft1, .eyeright1 {
+    position:absolute;
+    width: 75px;
+    height: 75px;
+    background-color: var(--body-color2);
+    border-radius: 50%;
+    z-index: 1;
+    border: 2px solid var(--body-color);
+  }
+  .eyeleft2, .eyeright2 {
+    position:absolute;
+    top: 38%;
+    left: 25%;
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    border-radius: 50%;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+  }
+  .eyeleft3, .eyeright3  {
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    border-radius: 50%;
+    z-index: 3;
+  }
+  .eyeleft4, .eyeright4 {
+    position:absolute;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+  }
+
+.eyeright {
+    position: absolute;
+    top: 0;
+    left: 40%;
+  }
+  /* .eyeright1 {
+      position:absolute;
+      width: 75px;
+      height: 75px;
+      background-color: var(--body-color2);
+      border-radius: 50%;
+      z-index: 1;
+      border: 2px solid var(--body-color);
+  }
+  .eyeright2 {
+      position:absolute;
+      top: 75px;
+      left: 75px;
+      transform: translate(-50%, -50%);
+      width: 60px;
+      height: 60px;
+      background-color: white;
+      border-radius: 50%;
+      z-index: 2;
+  }
+  .eyeright3 {
+      position:absolute;
+      top: 60px;
+      left: 60px;
+      transform: translate(-50%, -50%);
+      width: 30px;
+      height: 30px;
+      background-color: black;
+      border-radius: 50%;
+  }
+  .eyeright4 {
+      position:absolute;
+      width: 10px;
+      height: 10px;
+      background-color: white;
+      border-radius: 50%;
+  } */
+
+.owlnose {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 58%;
+    left: 37%;
+    background-color: orange;
+    transform: rotate(45deg);
+    z-index: 1;
+}
+
+.owlbody {
+    position: absolute;
+    top: 20%;
+    left: 4%;
+    width: 115px;
+    height: 125px;
+    background-color: var(--body-color2);
+    border-radius: 45%;
+}
+
+.wingleft {
+    position: absolute;
+    width: 35px;
+    height: 80px;
+    top: 40%;
+    background-color: var(--body-color);
+    border-radius: 70% 0 70% 0;
+    transform: rotate(-15deg);
+}
+.wingright {
+    position: absolute;
+    width: 35px;
+    height: 80px;
+    top: 40%;
+    left: 36.5%;
+    background-color: var(--body-color);
+    border-radius: 0 70% 0 70%;
+    transform: rotate(15deg);
+}
+
+.owlfeet {
+    position: absolute;
+    left: 28%;
+    top: 82%;
+    width: 80px;
+    height: 20px;
+    transform: translate(-50%);
+    z-index: -1;
+}
+.leftfoot {
+    position: absolute;
+    margin:0;
+    transform: rotate(10deg);
+    top: 0;
+    left: 0;
+    width: 25px;
+    height: 25px;
+}
+  .lpart1 {
+    position: absolute;
+    width: 4px;
+    height: 15px;
+    left: 0;
+    background-color: var(--body-color); 
+    border-radius: 60%;
+  }
+  .lpart2 {
+    position: absolute;
+    width: 4px;
+    height: 15px;
+    left: 30%;
+    background-color: var(--body-color); 
+    border-radius: 60%;
+  }
+  .lpart3 {
+    position: absolute;
+    width: 4px;
+    height: 15px;
+    left: 60%;
+    background-color: var(--body-color); 
+    border-radius: 60%;
+  }
+
+.rightfoot {
+    position: absolute;
+    margin:0;
+    transform: rotate(-10deg);
+    top: 0;
+    left: 50%;
+    width: 25px;
+    height: 25px;
+}
+  .rpart1 {
+    position: absolute;
+    width: 4px;
+    height: 15px;
+    left: 0;
+    background-color: var(--body-color); 
+    border-radius: 60%;
+  }
+  .rpart2 {
+    position: absolute;
+    width: 4px;
+    height: 15px;
+    left: 30%;
+    background-color: var(--body-color); 
+    border-radius: 60%;
+  }
+  .rpart3 {
+    position: absolute;
+    width: 4px;
+    height: 15px;
+    left: 60%;
+    background-color: var(--body-color); 
+    border-radius: 60%;
+  }
