@@ -27,14 +27,14 @@
     animation-timeline: auto;
     animation-range-start: normal;
     animation-range-end: normal;
-    animation: 1.5s linear 0s infinite normal none running headAnimation;
+    animation: 2s linear 0s infinite normal none running headAnimation;
 }
 @keyframes headAnimation {
     0% {
       top: 0%;
     }
     50% {
-      top: 5%;
+      top: 3%;
     }
     100% {
       top: 0%;
