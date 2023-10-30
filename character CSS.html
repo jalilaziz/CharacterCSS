@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/bg.css" />
+    <link rel="stylesheet" href="./css/trees.css" />
+    <link rel="stylesheet" href="./css/cat.css" />
     <title>CSS Character</title>
   </head>
   <body>
@@ -23,6 +26,13 @@
         <div class="cercle5"></div>
         <div class="rectangle"></div>
       </div>
+      <div class="sun">
+        <div class="moon"></div>
+      </div>
+    </div>
+    <div class="stars">
+      <span></span><span></span><span></span><span></span><span></span
+      ><span></span><span></span><span></span><span></span><span></span>
     </div>
     <!-- character -->
     <div class="box">
@@ -58,7 +68,6 @@
       </div>
       <!-- scarf end -->
       <!-- body-->
-
       <div class="to">
         <div class="yd1">
           <div class="ydo1"></div>
@@ -78,19 +87,101 @@
         <div class="stilo"></div>
       </div>
       <!-- body end -->
-      <!-- feet -->
+      <!-- feet section -->
       <div class="feet">
         <div class="rightup"></div>
         <div class="rightdown"></div>
         <div class="leftup"></div>
         <div class="leftdown"></div>
       </div>
-      <!-- end feet -->
+      <!-- end feet section -->
+      <!-- message section -->
       <div class="tolking-box">
-        <p class="text">Hello Everyone My Name is ...</p>
+        <p class="text">Hello Everyone My Name is Massin</p>
         <div class="circle1"></div>
         <div class="circle2"></div>
       </div>
+      <!-- end message section  -->
     </div>
+    <!-- cat section -->
+    <div class="cat-box">
+      <div class="cat-head">
+        <div class="face left">
+          <div class="ear"></div>
+          <div class="eye-bg">
+            <span class="eye"> </span>
+          </div>
+        </div>
+        <div class="face right">
+          <div class="ear"></div>
+          <div class="eye-bg">
+            <span class="eye"></span>
+          </div>
+        </div>
+        <div class="nous"></div>
+        <div class="cat-mouth"></div>
+      </div>
+      <div class="cat-body-box">
+        <div class="cat-body">
+          <span></span>
+        </div>
+        <div class="tail"></div>
+      </div>
+      <div class="cat-feet-box">
+        <div class="left feet"></div>
+        <div class="right feet"></div>
+      </div>
+      <audio id="audio" src="media/cat-meow.mp3"></audio>
+    </div>
+    <!-- end  -->
+    <div class="trees">
+      <div class="tree">
+        <div class="green">
+          <span></span><span></span><span></span> <span></span><span></span
+          ><span></span> <span></span><span></span><span></span> <span></span
+          ><span></span><span></span>
+          <span></span>
+        </div>
+        <div class="trunk"></div>
+        <div class="shadow"></div>
+      </div>
+      <div class="first tree">
+        <div class="green">
+          <span></span><span></span><span></span> <span></span><span></span
+          ><span></span> <span></span><span></span><span></span> <span></span
+          ><span></span><span></span>
+          <span></span>
+        </div>
+        <div class="trunk"></div>
+        <div class="shadow"></div>
+      </div>
+      <div class="socend tree">
+        <div class="green">
+          <span></span><span></span><span></span> <span></span><span></span
+          ><span></span> <span></span><span></span><span></span> <span></span
+          ><span></span><span></span>
+          <span></span>
+        </div>
+        <div class="trunk"></div>
+        <div class="shadow"></div>
+      </div>
+      <div class="third tree">
+        <div class="green">
+          <span></span><span></span><span></span> <span></span><span></span
+          ><span></span> <span></span><span></span><span></span> <span></span
+          ><span></span><span></span>
+          <span></span>
+        </div>
+        <div class="trunk"></div>
+        <div class="shadow"></div>
+      </div>
+    </div>
+    <script>
+      let cat = document.querySelector(".cat-box");
+      let audio = document.getElementById("audio");
+      cat.addEventListener("mouseenter", () => {
+        audio.play();
+      });
+    </script>
   </body>
 </html>

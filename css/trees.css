@@ -1,0 +1,185 @@
+.trees {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.tree {
+  position: absolute;
+  width: 200px;
+  height: 300px;
+  top: 50%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+}
+.tree .green {
+  position: absolute;
+  width: 100%;
+  height: 40%;
+  background-color: green;
+  border-radius: 30px;
+  z-index: 1;
+}
+.tree .green span {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  border-radius: 50%;
+  background-color: green;
+  transform: translate(-50%);
+}
+
+.tree .green span::after,
+.tree .green::after,
+.tree .green span::before {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 20px;
+  background-color: red;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+}
+.tree .green span::before {
+  width: 2px;
+  height: 5px;
+  background-color: #0b5c08;
+  left: 60%;
+  top: 40%;
+}
+
+.tree .green span:nth-child(2) {
+  left: 20px;
+  top: -20px;
+}
+.tree .green span:nth-child(3) {
+  left: 60px;
+  top: -20px;
+}
+.tree .green span:nth-child(4) {
+  left: 90px;
+  top: -10px;
+}
+.tree .green span:nth-child(5) {
+  left: 120px;
+  top: -30px;
+}
+.tree .green span:nth-child(6) {
+  left: 160px;
+  top: -10px;
+}
+.tree .green span:nth-child(7) {
+  left: 190px;
+  top: 0px;
+}
+.tree .green span:nth-child(8) {
+  left: 180px;
+  top: 40px;
+}
+.tree .green span:nth-child(9) {
+  left: 150px;
+  top: 70%;
+}
+.tree .green span:nth-child(10) {
+  left: 110px;
+  top: 70%;
+}
+.tree .green span:nth-child(11) {
+  left: 70px;
+  top: 65%;
+}
+.tree .green span:nth-child(12) {
+  left: 40px;
+  top: 65%;
+}
+.tree .green span:nth-child(13) {
+  left: 0px;
+  top: 35%;
+}
+
+.trunk {
+  position: absolute;
+  width: 20%;
+  height: 60%;
+  background-color: brown;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 0;
+}
+.trunk::after {
+  position: absolute;
+  content: "";
+  left: 100%;
+  bottom: 0%;
+  transform: translate(-50%);
+  border: 10px solid transparent;
+  border-bottom: 100px solid brown;
+  border-radius: 10px;
+}
+.trunk::before {
+  position: absolute;
+  content: "";
+  left: 0%;
+  bottom: 0%;
+  transform: translate(-50%);
+  border: 10px solid transparent;
+  border-bottom: 100px solid brown;
+  border-radius: 10px;
+}
+.shadow {
+  position: absolute;
+  width: 100%;
+  height: 20%;
+  left: 50%;
+  transform: translate(-50%, 50%) rotateY(0);
+  background-color: black;
+  opacity: 0.5;
+  border-radius: 50%;
+  bottom: 0;
+  z-index: -1;
+  animation: shadowAnimation var(--animation-time) linear infinite;
+}
+@keyframes shadowAnimation {
+  0% {
+    transform: translate(-30%, 50%) rotateY(0);
+  }
+  10% {
+    transform: translate(-70%, 50%) rotateY(45deg);
+  }
+  20% {
+    transform: translate(-50%, 50%) rotateY(0deg);
+  }
+  30% {
+    transform: translate(-70%, 50%) rotateY(-45deg);
+  }
+  40% {
+    transform: translate(-30%, 50%) rotateY(0deg);
+  }
+  50% {
+    transform: translate(-30%, 50%) rotateY(0deg);
+    background-color: transparent;
+  }
+  100% {
+    transform: translate(-30%, 50%) rotateY(0deg);
+  }
+}
+.first.tree {
+  position: absolute;
+  left: 70%;
+  z-index: -1;
+  height: 150px;
+}
+.socend.tree {
+  position: absolute;
+  left: 30%;
+  z-index: -1;
+  height: 150px;
+}
+.third.tree {
+  position: absolute;
+  left: 90%;
+  z-index: -1;
+  height: 250px;
+}
