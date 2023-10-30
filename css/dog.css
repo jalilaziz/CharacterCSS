@@ -1,5 +1,5 @@
-/* cat style */
-.cat-box {
+/* dog style */
+.dog-box {
   width: 200px;
   height: 200px;
   position: relative;
@@ -10,13 +10,13 @@
   z-index: 100;
 }
 
-.cat-box .cat-head {
+.dog-box .dog-head {
   width: 100%;
   height: 50%;
   position: absolute;
-  animation: catHeadAnimation 5s infinite linear;
+  animation: dogHeadAnimation 5s infinite linear;
 }
-@keyframes catHeadAnimation {
+@keyframes dogHeadAnimation {
   0% {
     transform: translateY(0) rotate(0deg);
   }
@@ -31,27 +31,27 @@
   }
 }
 /* face bg */
-.cat-box .cat-head .face {
+.dog-box .dog-head .face {
   position: absolute;
   width: 40%;
   height: 100%;
-  background-color: var(--cat-body-color);
-  border: 5px solid var(--cat-ear-color);
+  background-color: var(--dog-body-color);
+  border: 5px solid var(--dog-ear-color);
 }
-.cat-box .cat-head .face.left {
+.dog-box .dog-head .face.left {
   left: 50.5%;
   border-radius: 100% 0 30px 20px;
   transform: translate(-100%);
   border-right: 0px;
 }
-.cat-box .cat-head .face.right {
+.dog-box .dog-head .face.right {
   border-radius: 0 100% 20px 30px;
   right: 50.5%;
   transform: translate(100%);
   border-left: 0px;
 }
 /* mouth */
-.cat-box .cat-head .cat-mouth {
+.dog-box .dog-head .dog-mouth {
   content: "";
   position: absolute;
   left: 50%;
@@ -62,43 +62,43 @@
   transform: translate(-50%, -120%);
   border-radius: 5px 5px 10px 10px;
   z-index: -1;
-  border-bottom: 3px solid var(--cat-ear-color);
+  border-bottom: 3px solid var(--dog-ear-color);
   box-shadow: 0 0 10px 0 inset;
 }
 
 /* ear */
-.cat-box .cat-head .face .ear {
+.dog-box .dog-head .face .ear {
   position: absolute;
   width: 35px;
   height: 35px;
-  background-color: var(--cat-inside-ear-color);
+  background-color: var(--dog-inside-ear-color);
   border-radius: 5px 10px 100%;
-  border: 5px solid var(--cat-ear-color);
+  border: 5px solid var(--dog-ear-color);
 }
-.cat-box .cat-head .face.right .ear {
+.dog-box .dog-head .face.right .ear {
   border-radius: 10px 5px 10px 100%;
   right: 25%;
   top: 0%;
   transform: translateY(-30%) rotate(-15deg);
 }
-.cat-box .cat-head .face.left .ear {
+.dog-box .dog-head .face.left .ear {
   left: 25%;
   top: 0%;
   transform: translateY(-30%) rotate(15deg);
 }
-.cat-box .cat-head .face .eye-bg {
+.dog-box .dog-head .face .eye-bg {
   position: absolute;
   width: 90%;
   height: 70%;
-  background-color: var(--cat-ear-color);
+  background-color: var(--dog-ear-color);
   z-index: -1;
   border-radius: 100% 0 50%;
 }
-.cat-box .cat-head .face.right .eye-bg {
+.dog-box .dog-head .face.right .eye-bg {
   border-radius: 0 100% 0 50%;
   right: 0;
 }
-.cat-box .cat-head .face .eye-bg .eye {
+.dog-box .dog-head .face .eye-bg .eye {
   position: absolute;
   width: 20px;
   height: 20px;
@@ -108,8 +108,8 @@
   top: 50%;
   transform: translate(-50%);
 }
-.cat-box .cat-head .face .eye-bg .eye::after,
-.cat-box .cat-head .face .eye-bg .eye::before {
+.dog-box .dog-head .face .eye-bg .eye::after,
+.dog-box .dog-head .face .eye-bg .eye::before {
   content: "";
   position: absolute;
   width: 10px;
@@ -120,32 +120,32 @@
   left: 50%;
   transform: translate(-70%, -70%);
 }
-.cat-box .cat-head .face .eye-bg .eye::before {
+.dog-box .dog-head .face .eye-bg .eye::before {
   width: 5px;
   height: 5px;
   top: 60%;
   left: 60%;
   transform: translate(-50%, 50%);
 }
-.cat-box .cat-head .nous {
+.dog-box .dog-head .nous {
   position: absolute;
   width: 20px;
   height: 20px;
-  background-color: var(--cat-ear-color);
+  background-color: var(--dog-ear-color);
   top: 50%;
   left: 50%;
   transform: translate(-50%, 50%);
   border-radius: 50% 50% 5px 5px;
 }
-.cat-box:hover .cat-head .cat-mouth {
+.dog-box:hover .dog-head .dog-mouth {
   height: 40px;
   transform: translate(-50%, -50%);
   box-shadow: 2px 2px 10px 1px #740000 inset;
   border-bottom: 3px solid #3a0101;
 }
 
-/* cat body */
-.cat-box .cat-body-box {
+/* dog body */
+.dog-box .dog-body-box {
   width: 100%;
   height: 50%;
   position: absolute;
@@ -153,34 +153,34 @@
   z-index: -1;
 }
 
-.cat-box .cat-body-box .cat-body {
+.dog-box .dog-body-box .dog-body {
   width: 90%;
   height: 100%;
-  background-color: var(--cat-body-color);
-  border: 3px solid var(--cat-ear-color);
+  background-color: var(--dog-body-color);
+  border: 3px solid var(--dog-ear-color);
   position: absolute;
   left: 50%;
   transform: translate(-50%);
   border-radius: 100% 100% 20% 20%;
 }
 
-.cat-box .cat-body-box .cat-body::before,
-.cat-box .cat-body-box .cat-body::after {
+.dog-box .dog-body-box .dog-body::before,
+.dog-box .dog-body-box .dog-body::after {
   content: "";
   width: 47%;
   height: 70%;
   position: absolute;
-  background-color: var(--cat-ear-color);
+  background-color: var(--dog-ear-color);
   border-radius: 60% 0;
   z-index: -1;
   top: 20%;
   left: 1px;
 }
-.cat-box .cat-body-box .cat-body::after {
+.dog-box .dog-body-box .dog-body::after {
   left: 51%;
   border-radius: 0 60%;
 }
-.cat-box .cat-body-box .cat-body span {
+.dog-box .dog-body-box .dog-body span {
   position: absolute;
   width: 20px;
   height: 20px;
@@ -188,10 +188,10 @@
   left: 50%;
   transform: translate(-50%);
   border: 10px solid transparent;
-  border-bottom: 20px solid var(--cat-ear-color);
+  border-bottom: 20px solid var(--dog-ear-color);
 }
 
-.cat-box .cat-feet-box {
+.dog-box .dog-feet-box {
   position: absolute;
   height: 10%;
   width: 100%;
@@ -199,31 +199,31 @@
   width: 100%;
 }
 
-.cat-box .cat-feet-box .feet {
+.dog-box .dog-feet-box .feet {
   position: absolute;
   width: 30px;
   height: 100%;
-  background-color: var(--cat-ear-color);
+  background-color: var(--dog-ear-color);
   top: 25%;
   left: 50%;
   transform: translate(-100%, -20%);
   border-radius: 50%;
 }
-.cat-box .cat-feet-box .feet.right {
+.dog-box .dog-feet-box .feet.right {
   position: absolute;
   width: 30px;
   height: 100%;
-  background-color: var(--cat-ear-color);
+  background-color: var(--dog-ear-color);
   top: 25%;
   left: 50%;
   transform: translate(0, -20%);
   border-radius: 50%;
 }
-.cat-box .cat-body-box .tail {
+.dog-box .dog-body-box .tail {
   position: absolute;
   width: 40px;
   height: 70px;
-  background-color: var(--cat-ear-color);
+  background-color: var(--dog-ear-color);
   bottom: 0;
   left: 10px;
   border-radius: 0 100%;
