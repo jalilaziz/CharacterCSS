@@ -92,7 +92,7 @@
     background-color: var(--body-color2);
     border-radius: 50%;
     z-index: 1;
-    border: 2px solid var(--body-color);
+    border: 1px solid var(--body-color);
   }
   .eyeleft2, .eyeright2 {
     position:absolute;
@@ -100,7 +100,7 @@
     left: 25%;
     width: 60px;
     height: 60px;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     border-radius: 50%;
     z-index: 2;
     transform: translate(-50%, -50%);
@@ -122,6 +122,8 @@
     height: 10px;
     background-color: white;
     border-radius: 50%;
+    top: 9%;
+    left: 58%;
   }
 
 .eyeright {
@@ -211,7 +213,7 @@
 .owlfeet {
     position: absolute;
     left: 28%;
-    top: 82%;
+    top: 80%;
     width: 80px;
     height: 20px;
     transform: translate(-50%);
