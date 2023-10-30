@@ -391,7 +391,7 @@
   top: 30%;
   left: 0;
   border-top-left-radius: 80%;
-  z-index: 3;
+  z-index: -1;
   transform: rotate(19deg) translate(0%, 0%);
   border: 5px solid var(--black);
   border-right: 0px solid var(--black);
@@ -410,7 +410,7 @@
 }
 
 .lkrx {
-  width: 110px;
+  width: 146px;
   height: 200px;
   background-color: var(--clothes-color);
   position: absolute;
@@ -442,7 +442,7 @@
   top: 50%;
   left: 100%;
   border-top-right-radius: 80%;
-  z-index: 1;
+  z-index: -1;
   border: 5px solid var(--black);
   border-left: 0px solid var(--black);
 }
@@ -462,21 +462,18 @@
 
 /*samir*/
 
-.lkrx {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-}
 .lkrx .button {
   width: 15px;
   height: 15px;
   background-color: var(--clothes-color);
   border-radius: 50px;
-  margin-left: 30px;
+
   box-shadow: 1px 1px 10px 0 gray;
   border: 2px solid #111;
   position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+
 }
 .lkrx .button:nth-child(1) {
   top: 0%;
